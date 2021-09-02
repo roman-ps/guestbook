@@ -1,0 +1,38 @@
+.container {
+  border: 1px solid #000000;
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+.item {
+  display: flex;
+  margin: 20px 0;
+}
+
+label {
+  width: 80px;
+  margin-right: 1px;
+}
+
+input {
+  width: 45%;
+}
+
+textarea {
+  width: 45%;
+  height: 100px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+.btn {
+  font-size: 15px;
+  width: 140px;
+  padding: 10px;
+  margin-left: 80px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
