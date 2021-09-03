@@ -15,11 +15,11 @@ label {
 }
 
 input {
-  width: 45%;
+  width: 60%;
 }
 
 textarea {
-  width: 45%;
+  width: 60%;
   height: 100px;
 }
 

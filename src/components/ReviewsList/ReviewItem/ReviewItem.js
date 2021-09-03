@@ -1,16 +1,16 @@
 import React from 'react';
 import classes from './ReviewItem.module.css';
 
-const ReviewItem = () => {
+const ReviewItem = (props) => {
   return (
     <div className={classes.item}>
       <div className={classes.left}>
-        <p>Name</p>
-        <p>Email</p>
-        <p>City</p>
+        <p>{props.name}</p>
+        <p>{props.mail}</p>
+        <p>{props.city}</p>
       </div>
       <div className={classes.right}>
-        <p>This is text</p>
+        <p>{props.text}</p>
       </div>
     </div>
   );

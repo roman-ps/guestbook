@@ -4,17 +4,14 @@ import Title from './components/Title/Title';
 import AddReview from './components/AddReview/AddReview';
 import ReviewsList from './components/ReviewsList/ReviewsList';
 
-const df = [1, 423, 53, 2, 4353, 33, '35', 3453, 453]
-
-const App = () => {
+const App = (props) => {
   return (
     <div className='wrapper'>
       <Title />
       <AddReview />
-      <ReviewsList />
+      <ReviewsList data={props.data}/>
     </div>
   );
 }
-console.log(...df)
 
 export default App;
