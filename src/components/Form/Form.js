@@ -1,10 +1,11 @@
 import React from 'react';
-import classes from './AddReview.module.css';
-import {getLastId} from './../../index';
+import classes from './Form.module.css';
+import {getLastId} from '../../index';
 
 let xxx = [];
 localStorage.setItem('items', xxx);
-const AddReview = () => {
+
+const Form = () => {
 
   const changeStr = () => {
     const nameInput = document.querySelector('#name').value;
@@ -22,10 +23,10 @@ const AddReview = () => {
   };
 
   return (
-    <div className={classes.container}>
+    <form className={classes.container}>
       <div className={classes.item}>
         <label htmlFor='name'>Имя: </label>
-        <input className={classes.name} placeholder='Ваше имя' type='text' id='name' minLength='2' required/>
+        <input className={classes.name} placeholder='Ваше имя' type='text' id='name' minLength='3' required/>
       </div>
       <div className={classes.item}>
         <label htmlFor='mail'>Почта: </label>
@@ -39,9 +40,9 @@ const AddReview = () => {
         <label htmlFor='text'>Текст: </label>
         <textarea placeholder='Напишите свой отзыв' id='text' minLength='5' required/>
       </div>
-      <button onClick={changeStr} className={classes.btn} type='button'>Добавить отзыв</button>
-    </div>
+      <button onClick={changeStr} className={classes.btn} type='submit'>Добавить отзыв</button>
+    </form>
   );
 };
 
-export default AddReview;
+export default Form;
