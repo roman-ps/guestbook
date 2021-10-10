@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './ReviewsList.module.css';
 import ReviewItem from './ReviewItem/ReviewItem';
 
 const ReviewsList = (props) => {
@@ -10,7 +9,6 @@ const ReviewsList = (props) => {
 
   return (
     <div>
-      <h2 className={classes.title}>Reviews List</h2>
       {elements}
     </div>
   );
