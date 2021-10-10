@@ -1,5 +1,4 @@
 import './App.css';
-
 import Title from './components/Title/Title';
 import AddReview from './components/AddReview/AddReview';
 import ReviewsList from './components/ReviewsList/ReviewsList';

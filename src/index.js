@@ -15,4 +15,10 @@ const DATA = [
   {name: 'quil', mail: 'df45r@3fg.gdu', city: 'Atlay56', text: 'Be cool4564'},
 ];
 
+const getLastId = (arr) => {
+  return arr.length + 1;
+}
+
 ReactDOM.render(<App data={DATA}/>, ROOT_ELEMENT);
+
+export {getLastId};

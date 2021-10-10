@@ -1,8 +1,9 @@
 import React from 'react';
 import classes from './AddReview.module.css';
+import {getLastId} from './../../index';
 
 let xxx = [];
-localStorage.setItem('keys', xxx);
+localStorage.setItem('items', xxx);
 const AddReview = () => {
 
   const changeStr = () => {
@@ -11,13 +12,13 @@ const AddReview = () => {
     // const cityInput = document.querySelector('#city').value;
     // const textInput = document.querySelector('#text').value;
     // const data = {id: 0, name: nameInput, mail: mailInput, city: cityInput, text: textInput};
-    const data = {id: 0, name: nameInput};
+    const data = {id: getLastId(xxx), name: nameInput};
     xxx.push(data);
     console.log(xxx);
     let temp = JSON.stringify(data);
-    let stor = localStorage.getItem('keys');
-    localStorage.setItem('keys', temp + stor);
-    console.log(localStorage.getItem('keys'));
+    let stor = localStorage.getItem('items');
+    localStorage.setItem('items', temp + stor);
+    console.log(localStorage.getItem('items'));
   };
 
   return (
