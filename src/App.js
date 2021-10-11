@@ -8,11 +8,11 @@ const App = (props) => {
   return (
     <div className='wrapper'>
       <Title />
-      <Form />
+      <Form data={props.data}/>
       <Subtitle />
       <ReviewsList data={props.data}/>
     </div>
   );
-}
+};
 
 export default App;
