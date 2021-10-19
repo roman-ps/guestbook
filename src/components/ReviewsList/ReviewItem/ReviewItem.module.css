@@ -2,6 +2,7 @@
   display: flex;
   border: 1px solid #000000;
   margin: 20px 0;
+  position: relative;
 }
 
 .left {
@@ -14,4 +15,36 @@
 
 .right {
   padding: 0 20px;
+}
+
+.btn {
+  position: absolute;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  display: block;
+  content: '';
+  bottom: 50%;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.btn::before {
+  transform: rotate(-45deg);
+}
+
+.btn::after {
+  transform: rotate(45deg);
 }

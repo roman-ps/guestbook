@@ -4,6 +4,7 @@ import classes from './ReviewItem.module.css';
 const ReviewItem = (props) => {
   return (
     <div className={classes.item}>
+      <button className={classes.btn}>Закрыть</button>
       <div className={classes.left}>
         <p>{props.name}</p>
         <p>{props.mail}</p>
