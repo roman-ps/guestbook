@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from './Form.module.css';
-import {renderData, getLastId} from './../../index';
+import {renderData, getNextId} from './../../index';
 
 const Form = (props) => {
   const addReview = (evt) => {
     evt.preventDefault();
     const newReview = {
-      id: getLastId(),
+      id: getNextId(),
       name: evt.target.name.value,
       mail: evt.target.mail.value,
       city: evt.target.city.value,
