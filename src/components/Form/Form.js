@@ -5,7 +5,6 @@ import {renderData, getLastId} from './../../index';
 const Form = (props) => {
   const addReview = (evt) => {
     evt.preventDefault();
-
     const newReview = {
       id: getLastId(),
       name: evt.target.name.value,
