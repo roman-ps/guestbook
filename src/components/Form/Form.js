@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Form.module.css';
-import {renderData, getNextId} from './../../index';
+import {renderData} from './../../Render';
+import {getNextId} from './../../Data';
 
 const Form = (props) => {
   const addReview = (evt) => {
