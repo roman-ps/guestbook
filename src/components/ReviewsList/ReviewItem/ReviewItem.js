@@ -10,7 +10,7 @@ const ReviewItem = (props) => {
         <p>{props.mail}</p>
         <p>{props.city}</p>
       </div>
-      <div className={classes.right}>
+      <div on className={classes.right}>
         <p>{props.text}</p>
       </div>
     </div>

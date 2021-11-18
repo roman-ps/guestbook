@@ -1,40 +1,65 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './Form.module.css';
-import {renderData} from './../../Render';
-import {getNextId} from './../../Data';
+// import {renderData} from './../../Render';
+// import {getNextId} from './../../Data';
 
 const Form = (props) => {
-  const addReview = (evt) => {
+  const [enterName, setEnterName] = useState('');
+  const [enterMail, setEnterMail] = useState('');
+  const [enterCity, setEnterCity] = useState('');
+  const [enterText, setEnterText] = useState('');
+
+  const formSubmitHandler = (evt) => {
     evt.preventDefault();
+
     const newReview = {
-      id: getNextId(),
-      name: evt.target.name.value,
-      mail: evt.target.mail.value,
-      city: evt.target.city.value,
-      text: evt.target.text.value,
+      // id: getNextId(),
+      name: enterName,
+      mail: enterMail,
+      city: enterCity,
+      text: enterText,
     }
 
-    props.data.push(newReview);
-    renderData();
+    console.log(newReview);
+    setEnterName('');
+    setEnterMail('');
+    setEnterCity('');
+    setEnterText('');
+  };
+
+  const nameInputHandler = (evt) => {
+    setEnterName(evt.target.value);
+  };
+
+  const mailInputHandler = (evt) => {
+    setEnterMail(evt.target.value);
+  };
+
+  const cityInputHandler = (evt) => {
+    setEnterCity(evt.target.value);
+  };
+
+  const textInputHandler = (evt) => {
+    setEnterText(evt.target.value);
   };
 
   return (
-    <form className={classes.container} action='' method='POST' onSubmit={addReview}>
+    <form className={classes.container} action='' method='POST' onSubmit={formSubmitHandler}>
       <div className={classes.item}>
         <label htmlFor='name'>Имя: </label>
-        <input className={classes.name} placeholder='Ваше имя' type='text' id='name' minLength='3' required />
+        <input value={enterName} onChange={nameInputHandler} className={classes.name} placeholder='Ваше имя' type='text' id='name' minLength='3' required />
       </div>
       <div className={classes.item}>
         <label htmlFor='mail'>Почта: </label>
-        <input placeholder='Ваша почта' type='email' id='mail' required />
+        <input value={enterMail} onChange={mailInputHandler} placeholder='Ваша почта' type='email' id='mail' required />
       </div>
       <div className={classes.item}>
         <label htmlFor='city'>Город: </label>
-        <input placeholder='Откуда вы' type='text' id='city' required />
+        <input value={enterCity} onChange={cityInputHandler}placeholder='Откуда вы' type='text' id='city' required />
       </div>
       <div className={classes.item}>
         <label htmlFor='text'>Текст: </label>
-        <textarea placeholder='Напишите свой отзыв' id='text' minLength='5' required />
+        <textarea value={enterText} onChange={textInputHandler} placeholder='Напишите свой отзыв' id='text' minLength='5' required />
       </div>
       <button className={classes.btn} type='submit'>Добавить отзыв</button>
     </form>
