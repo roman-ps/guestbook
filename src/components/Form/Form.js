@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import classes from './Form.module.css';
-// import {renderData} from './../../Render';
-// import {getNextId} from './../../Data';
 
 const Form = (props) => {
   const [enterName, setEnterName] = useState('');
@@ -13,14 +11,13 @@ const Form = (props) => {
     evt.preventDefault();
 
     const newReview = {
-      // id: getNextId(),
       name: enterName,
       mail: enterMail,
       city: enterCity,
       text: enterText,
     }
 
-    console.log(newReview);
+    props.saveData(newReview);
     setEnterName('');
     setEnterMail('');
     setEnterCity('');
