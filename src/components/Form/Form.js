@@ -15,6 +15,7 @@ const Form = (props) => {
       mail: enterMail,
       city: enterCity,
       text: enterText,
+      id: Math.random(),
     }
 
     props.saveData(newReview);
@@ -44,7 +45,7 @@ const Form = (props) => {
     <form className={classes.container} action='' method='POST' onSubmit={formSubmitHandler}>
       <div className={classes.item}>
         <label htmlFor='name'>Имя: </label>
-        <input value={enterName} onChange={nameInputHandler} className={classes.name} placeholder='Ваше имя' type='text' id='name' minLength='3' required />
+        <input value={enterName} onChange={nameInputHandler} placeholder='Ваше имя' className={classes.name} type='text' id='name' minLength='3' required />
       </div>
       <div className={classes.item}>
         <label htmlFor='mail'>Почта: </label>
@@ -52,7 +53,7 @@ const Form = (props) => {
       </div>
       <div className={classes.item}>
         <label htmlFor='city'>Город: </label>
-        <input value={enterCity} onChange={cityInputHandler}placeholder='Откуда вы' type='text' id='city' required />
+        <input value={enterCity} onChange={cityInputHandler} placeholder='Откуда вы' type='text' id='city' required />
       </div>
       <div className={classes.item}>
         <label htmlFor='text'>Текст: </label>
