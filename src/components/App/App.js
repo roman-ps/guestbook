@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import classes from './App.module.css';
-import Title from './components/Title/Title';
-import Form from './components/Form/Form';
-import ReviewsList from './components/ReviewsList/ReviewsList';
-import Subtitle from './components/Subtitle/Subtitle';
+import Title from './Title/Title';
+import Form from './Form/Form';
+import ReviewsList from './ReviewsList/ReviewsList';
+import Subtitle from './Subtitle/Subtitle';
 
 const reviewsAll = [];
 
