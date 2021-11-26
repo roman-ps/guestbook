@@ -15,8 +15,7 @@ const Form = (props) => {
       mail: enterMail,
       city: enterCity,
       text: enterText,
-      id: Math.random(),
-    }
+    };
 
     props.saveData(newReview);
     setEnterName('');

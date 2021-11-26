@@ -9,8 +9,17 @@ const reviewsAll = [];
 
 const App = () => {
   const [reviews, setReviews] = useState(reviewsAll);
+
+  const getNextId = () => {
+    return reviews.reduce(function(a,b)  {
+      return (Math.max(a,b.id));
+    },0) + 1;
+  };
+
+
   const onSaveData = (enterData) => {
-    setReviews([enterData, ...reviews]);
+    const actualData = {...enterData, id: getNextId()};
+    setReviews([actualData, ...reviews]);
   };
 
   return (

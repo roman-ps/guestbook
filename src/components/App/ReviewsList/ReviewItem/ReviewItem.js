@@ -6,9 +6,10 @@ const ReviewItem = (props) => {
     <div className={classes.item}>
       <button className={classes.btn}>Закрыть</button>
       <div className={classes.left}>
-        <p>{props.name}</p>
-        <p>{props.mail}</p>
-        <p>{props.city}</p>
+        <p>Имя: {props.name}</p>
+        <p>Почта: {props.mail}</p>
+        <p>Город: {props.city}</p>
+        <p>ID: {props.id}</p>
       </div>
       <div className={classes.right}>
         <p>{props.text}</p>
