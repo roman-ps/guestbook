@@ -6,6 +6,7 @@ const Form = (props) => {
   const [enterMail, setEnterMail] = useState('');
   const [enterCity, setEnterCity] = useState('');
   const [enterText, setEnterText] = useState('');
+  const [enterSex, setEnterSex] = useState('');
 
   const formSubmitHandler = (evt) => {
     evt.preventDefault();
@@ -15,6 +16,7 @@ const Form = (props) => {
       mail: enterMail,
       city: enterCity,
       text: enterText,
+      sex: enterSex,
     };
 
     props.saveData(newReview);
@@ -22,6 +24,7 @@ const Form = (props) => {
     setEnterMail('');
     setEnterCity('');
     setEnterText('');
+    setEnterSex('');
   };
 
   const nameInputHandler = (evt) => {
@@ -30,6 +33,10 @@ const Form = (props) => {
 
   const mailInputHandler = (evt) => {
     setEnterMail(evt.target.value);
+  };
+
+  const sexInputHandler = (evt) => {
+    setEnterSex(evt.target.value);
   };
 
   const cityInputHandler = (evt) => {
@@ -50,6 +57,17 @@ const Form = (props) => {
         <label htmlFor='mail'>Почта: </label>
         <input value={enterMail} onChange={mailInputHandler} placeholder='Ваша почта' type='email' id='mail' required />
       </div>
+
+      <div className={classes.item}>
+      <label htmlFor='select'>Пол: </label>
+        <select name='select' onChange={sexInputHandler}>Пол:
+          <option value=''></option>
+          <option value='Мужской'>Мужской</option>
+          <option value='Женский'>Женский</option>
+        </select>
+      </div>
+
+
       <div className={classes.item}>
         <label htmlFor='city'>Город: </label>
         <input value={enterCity} onChange={cityInputHandler} placeholder='Откуда вы' type='text' id='city' required />
