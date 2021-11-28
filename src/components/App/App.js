@@ -4,6 +4,7 @@ import Title from './Title/Title';
 import Form from './Form/Form';
 import ReviewsList from './ReviewsList/ReviewsList';
 import Subtitle from './Subtitle/Subtitle';
+import Filter from './Filter/Filter';
 
 const reviewsAll = [];
 
@@ -16,10 +17,21 @@ const App = () => {
     },0) + 1;
   };
 
+  // const FilterList = (option) => {
+  //   return reviews.filter((elem) => {
+  //     return elem.sex === option;
+  //   })
+  // }
 
   const onSaveData = (enterData) => {
     const actualData = {...enterData, id: getNextId()};
     setReviews([actualData, ...reviews]);
+  };
+
+  const onFilterList = (option) => {
+    const filterList = reviews.filter((elem) => elem.sex === option);
+    console.log(reviews)
+    setReviews(filterList);
   };
 
   return (
@@ -27,6 +39,7 @@ const App = () => {
       <Title />
       <Form saveData={onSaveData}/>
       <Subtitle />
+      <Filter filterList={onFilterList}/>
       <ReviewsList items={reviews}/>
     </div>
   );

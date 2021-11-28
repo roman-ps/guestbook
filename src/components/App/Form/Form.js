@@ -57,17 +57,14 @@ const Form = (props) => {
         <label htmlFor='mail'>Почта: </label>
         <input value={enterMail} onChange={mailInputHandler} placeholder='Ваша почта' type='email' id='mail' required />
       </div>
-
       <div className={classes.item}>
-      <label htmlFor='select'>Пол: </label>
+        <label htmlFor='select'>Пол: </label>
         <select name='select' onChange={sexInputHandler}>Пол:
           <option value=''></option>
           <option value='Мужской'>Мужской</option>
           <option value='Женский'>Женский</option>
         </select>
       </div>
-
-
       <div className={classes.item}>
         <label htmlFor='city'>Город: </label>
         <input value={enterCity} onChange={cityInputHandler} placeholder='Откуда вы' type='text' id='city' required />
