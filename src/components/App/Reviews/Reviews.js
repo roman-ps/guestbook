@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ReviewsList from './ReviewsList/ReviewsList';
 import Filter from './Filter/Filter';
+import classes from './Reviews.module.css';
 
 const Reviews = (props) => {
   const [filteredSex, setFilteredSex] = useState('');
@@ -14,10 +15,10 @@ const Reviews = (props) => {
   });
 
   return (
-    <div>
+    <main className={classes.main}>
       <Filter selectFilterHandler={onSelectFilterHandler} />
       <ReviewsList items={filteredReviews} />
-    </div>
+    </main>
   )
 };
 

@@ -1,7 +1,12 @@
-.container {
+.form {
   border: 1px solid #000000;
   padding: 20px 20px;
   font-size: 20px;
+  background-color: #E6E6FA;
+  border-radius: 5px;
+}
+
+.container {
 }
 
 .item {
@@ -11,7 +16,6 @@
 
 label {
   width: 80px;
-  margin-right: 1px;
 }
 
 input {
@@ -29,10 +33,22 @@ textarea {
 
 .btn {
   font-size: 15px;
-  width: 140px;
   padding: 10px;
-  margin-left: 80px;
   border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.btn_add {
+  margin: 0 auto;
+  display: block;
+  width: 185px;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
   background-color: transparent;
   cursor: pointer;
 }
