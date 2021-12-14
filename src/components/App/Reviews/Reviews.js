@@ -16,6 +16,7 @@ const Reviews = (props) => {
 
   return (
     <main className={classes.main}>
+      <h2 className={classes.title}>Reviews</h2>
       <Filter selectFilterHandler={onSelectFilterHandler} />
       <ReviewsList items={filteredReviews} />
     </main>

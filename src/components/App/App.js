@@ -25,7 +25,6 @@ const App = () => {
     <div className={classes.wrapper}>
       <Title />
       <Form saveData={onSaveData}/>
-      <Subtitle />
       <Reviews items={reviews}/>
     </div>
   );
