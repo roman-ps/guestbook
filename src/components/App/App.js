@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import classes from './App.module.css';
 import Title from './Title/Title';
 import Form from './Form/Form';
-import Subtitle from './Subtitle/Subtitle';
 import Reviews from './Reviews/Reviews';
 
 const reviewsAll = [];
