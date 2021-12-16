@@ -8,22 +8,14 @@ const Form = (props) => {
   const [enterText, setEnterText] = useState('');
   const [enterSex, setEnterSex] = useState('');
 
-  const [formState, setFormState] = useState(false);
-
   const formReset = () => {
     setEnterName('');
     setEnterMail('');
     setEnterCity('');
     setEnterText('');
     setEnterSex('');
-  }
-
-  let formLink = React.createRef();
-
-  const toggleFormVisible = () => {
-    setFormState(!formState);
-    console.log(formState)
-  }
+    props.state(false);
+  };
 
   const formSubmitHandler = (evt) => {
     evt.preventDefault();
@@ -37,7 +29,8 @@ const Form = (props) => {
     };
 
     props.saveData(newReview);
-    formReset()
+    formReset();
+    props.state(false);
   };
 
   const nameInputHandler = (evt) => {
@@ -62,8 +55,7 @@ const Form = (props) => {
 
   return (
     <form className={classes.form} action='' method='POST' onSubmit={formSubmitHandler}>
-      <button className={classes.btn_add} onClick={toggleFormVisible}>Добавить новый отзыв</button>
-      <div className={classes.container} ref={formLink}>
+      <div className={classes.container}>
         <div className={classes.item}>
           <label htmlFor='name'>Имя: </label>
           <input value={enterName} onChange={nameInputHandler} placeholder='Ваше имя' className={classes.name} type='text' id='name' minLength='3' required />

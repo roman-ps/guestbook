@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import classes from './App.module.css';
 import Title from './Title/Title';
-import Form from './Form/Form';
+import NewReview from './NewReview/NewReview';
 import Reviews from './Reviews/Reviews';
 
 const reviewsAll = [];
@@ -23,7 +23,8 @@ const App = () => {
   return (
     <div className={classes.wrapper}>
       <Title />
-      <Form saveData={onSaveData}/>
+      <NewReview saveData={onSaveData} />
+      {/* <Form saveData={onSaveData}/> */}
       <Reviews items={reviews}/>
     </div>
   );
