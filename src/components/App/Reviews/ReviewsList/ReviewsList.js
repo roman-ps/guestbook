@@ -8,7 +8,7 @@ const ReviewsList = (props) => {
 
   if (dataItems.length > 0) {
     elements = dataItems.map((elem) => (
-    <ReviewItem name={elem.name} mail={elem.mail} city={elem.city} text={elem.text} key={elem.id} id={elem.id} sex={elem.sex}/>
+    <ReviewItem name={elem.name} mail={elem.mail} city={elem.city} text={elem.text} key={elem.id} id={elem.id} sex={elem.sex} />
     ))
   };
 

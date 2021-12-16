@@ -3,20 +3,20 @@ import classes from './NewReview.module.css';
 import Form from './Form/Form';
 
 const NewReview = (props) => {
-  const [formState, setFormState] = useState(false);
+  const [formEdit, setFormEdit] = useState(false);
 
   const toggleFormVisible = () => {
-    setFormState(!formState);
+    setFormEdit(!formEdit);
   };
 
-  const onSaveData = (data) => {
-    return data;
+  const onSaveData = (enterData) => {
+    props.finalSaveData(enterData);
   };
 
   return (
     <div>
-      {formState
-      ? <Form state={setFormState} saveData={onSaveData}/>
+      {formEdit
+      ? <Form state={setFormEdit} saveData={onSaveData} />
       : <button className={classes.btn} onClick={toggleFormVisible}>Добавить новый отзыв</button>}
     </div>
   )

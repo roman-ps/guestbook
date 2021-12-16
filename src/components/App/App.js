@@ -15,7 +15,7 @@ const App = () => {
     },0) + 1;
   };
 
-  const onSaveData = (enterData) => {
+  const onFinalSaveData = (enterData) => {
     const actualData = {...enterData, id: getNextId()};
     setReviews([actualData, ...reviews]);
   };
@@ -23,9 +23,8 @@ const App = () => {
   return (
     <div className={classes.wrapper}>
       <Title />
-      <NewReview saveData={onSaveData} />
-      {/* <Form saveData={onSaveData}/> */}
-      <Reviews items={reviews}/>
+      <NewReview finalSaveData={onFinalSaveData} />
+      <Reviews items={reviews} />
     </div>
   );
 };
