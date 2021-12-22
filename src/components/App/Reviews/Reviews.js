@@ -14,11 +14,15 @@ const Reviews = (props) => {
     return (elem.sex === filteredSex || filteredSex === '');
   });
 
+  const onSaveKeyInReviews = (id) => {
+    props.saveKeyInApp(id);
+  }
+
   return (
     <main className={classes.main}>
       <h2 className={classes.title}>Reviews</h2>
       <Filter selectFilterHandler={onSelectFilterHandler} />
-      <ReviewsList items={filteredReviews} />
+      <ReviewsList saveKeyInReviews={onSaveKeyInReviews} items={filteredReviews} />
     </main>
   )
 };

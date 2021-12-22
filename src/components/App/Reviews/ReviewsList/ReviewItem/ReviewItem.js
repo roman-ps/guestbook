@@ -2,9 +2,13 @@ import React from 'react';
 import classes from './ReviewItem.module.css';
 
 const ReviewItem = (props) => {
+  const clickBtnHandler = () => {
+    props.saveKeyInList(props.id);
+  }
+
   return (
     <div className={classes.item}>
-      <button className={classes.btn}>Закрыть</button>
+      <button onClick={clickBtnHandler} className={classes.btn}>Закрыть</button>
       <div className={classes.left}>
         <p>Имя: {props.name}</p>
         <p>Почта: {props.mail}</p>

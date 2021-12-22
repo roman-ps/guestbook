@@ -20,11 +20,18 @@ const App = () => {
     setReviews([actualData, ...reviews]);
   };
 
+  const onSaveKeyInApp = (id) => {
+    const finalReviews = reviews.filter((elem) => {
+      return (elem.id !== id);
+    });
+    setReviews(finalReviews);
+  };
+
   return (
     <div className={classes.wrapper}>
       <Title />
       <NewReview finalSaveData={onFinalSaveData} />
-      <Reviews items={reviews} />
+      <Reviews items={reviews} saveKeyInApp={onSaveKeyInApp}/>
     </div>
   );
 };
