@@ -5,8 +5,8 @@ import Form from './Form/Form';
 const NewReview = (props) => {
   const [formEdit, setFormEdit] = useState(false);
 
-  const toggleFormVisible = () => {
-    setFormEdit(!formEdit);
+  const enableFormEdit = () => {
+    setFormEdit(true);
   };
 
   const onSaveData = (enterData) => {
@@ -17,7 +17,7 @@ const NewReview = (props) => {
     <div>
       {formEdit
       ? <Form state={setFormEdit} saveData={onSaveData} />
-      : <button className={classes.btn} onClick={toggleFormVisible}>Добавить новый отзыв</button>}
+      : <button className={classes.btn} onClick={enableFormEdit}>Добавить новый отзыв</button>}
     </div>
   )
 };

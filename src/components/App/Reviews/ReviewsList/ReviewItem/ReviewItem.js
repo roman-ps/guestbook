@@ -3,7 +3,7 @@ import classes from './ReviewItem.module.css';
 
 const ReviewItem = (props) => {
   const clickBtnHandler = () => {
-    props.saveKeyInList(props.id);
+    props.saveId(props.id);
   }
 
   return (

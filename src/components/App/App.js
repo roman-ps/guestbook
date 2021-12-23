@@ -20,7 +20,7 @@ const App = () => {
     setReviews([actualData, ...reviews]);
   };
 
-  const onSaveKeyInApp = (id) => {
+  const deleteItemById = (id) => {
     const finalReviews = reviews.filter((elem) => {
       return (elem.id !== id);
     });
@@ -31,7 +31,7 @@ const App = () => {
     <div className={classes.wrapper}>
       <Title />
       <NewReview finalSaveData={onFinalSaveData} />
-      <Reviews items={reviews} saveKeyInApp={onSaveKeyInApp}/>
+      <Reviews items={reviews} passIdInApp={deleteItemById}/>
     </div>
   );
 };
