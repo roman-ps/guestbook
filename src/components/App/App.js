@@ -4,7 +4,16 @@ import Title from './Title/Title';
 import NewReview from './NewReview/NewReview';
 import Reviews from './Reviews/Reviews';
 
-const reviewsAll = [];
+const reviewsAll = [
+  {
+    name: 'Landini',
+    mail: 'landini@land.com',
+    city: 'Florida',
+    text: 'Landini love Florida',
+    sex: 'Мужской',
+    id: 1,
+  },
+];
 
 const App = () => {
   const [reviews, setReviews] = useState(reviewsAll);

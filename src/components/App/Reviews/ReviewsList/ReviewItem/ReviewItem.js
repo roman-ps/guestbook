@@ -1,15 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './ReviewItem.module.css';
 
 const ReviewItem = (props) => {
-  const clickBtnHandler = () => {
+  const [theme, setTheme] = useState('white');
+  const [colorText, setColorText] = useState('black');
+  const [colorBorder, setColorBorder] = useState('black');
+
+  const clickBtnDeleteItemHandler = () => {
     props.saveId(props.id);
-  }
+  };
+
+  const clickBtnChangeThemeHandler = () => {
+    theme === 'white' ? setTheme('black') : setTheme('white');
+    colorText === 'black' ? setColorText('white') : setColorText('black');
+    colorBorder === 'black' ? setColorBorder('grey') : setColorBorder('black');
+  };
 
   return (
-    <div className={classes.item}>
-      <button onClick={clickBtnHandler} className={classes.btn}>Закрыть</button>
-      <div className={classes.left}>
+    <div className={classes.item} style={{backgroundColor: theme, color: colorText, borderColor: colorBorder}}>
+      <button onClick={clickBtnDeleteItemHandler} className={classes.btn}>Удалить</button>
+      <button onClick={clickBtnChangeThemeHandler} className={classes.btnTheme}>Поменять тему</button>
+      <div className={classes.left} style={{borderColor: colorBorder}}>
         <p>Имя: {props.name}</p>
         <p>Почта: {props.mail}</p>
         <p>Пол: {props.sex}</p>
