@@ -11,9 +11,9 @@ const ReviewItem = (props) => {
   };
 
   const clickBtnChangeThemeHandler = () => {
-    theme === 'white' ? setTheme('black') : setTheme('white');
-    colorText === 'black' ? setColorText('white') : setColorText('black');
-    colorBorder === 'black' ? setColorBorder('grey') : setColorBorder('black');
+    setTheme(theme === 'white' ? 'black' : 'white');
+    setColorText(colorText === 'black' ? 'white' : 'black');
+    setColorBorder(colorBorder === 'black' ? 'grey' : 'black');
   };
 
   return (
