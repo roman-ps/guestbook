@@ -60,3 +60,14 @@
   bottom: 15px;
   cursor: pointer;
 }
+
+.item.night {
+  background-color: #000000;
+  color: #ffffff;
+  border-color:#c5c5c5;
+}
+
+.item.night .left {
+  border-color:#c5c5c5;
+}
+

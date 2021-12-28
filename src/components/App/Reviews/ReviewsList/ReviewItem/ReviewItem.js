@@ -2,25 +2,22 @@ import React, {useState} from 'react';
 import classes from './ReviewItem.module.css';
 
 const ReviewItem = (props) => {
-  const [theme, setTheme] = useState('white');
-  const [colorText, setColorText] = useState('black');
-  const [colorBorder, setColorBorder] = useState('black');
+  const [nightTheme, setNightTheme] = useState(false);
+  const classNightTheme = nightTheme ? classes.night : '';
 
   const clickBtnDeleteItemHandler = () => {
     props.saveId(props.id);
   };
 
   const clickBtnChangeThemeHandler = () => {
-    setTheme(theme === 'white' ? 'black' : 'white');
-    setColorText(colorText === 'black' ? 'white' : 'black');
-    setColorBorder(colorBorder === 'black' ? 'grey' : 'black');
+    setNightTheme(!nightTheme);
   };
 
   return (
-    <div className={classes.item} style={{backgroundColor: theme, color: colorText, borderColor: colorBorder}}>
+    <div className={`${classes.item} ${classNightTheme}`}>
       <button onClick={clickBtnDeleteItemHandler} className={classes.btn}>Удалить</button>
       <button onClick={clickBtnChangeThemeHandler} className={classes.btnTheme}>Поменять тему</button>
-      <div className={classes.left} style={{borderColor: colorBorder}}>
+      <div className={classes.left}>
         <p>Имя: {props.name}</p>
         <p>Почта: {props.mail}</p>
         <p>Пол: {props.sex}</p>
