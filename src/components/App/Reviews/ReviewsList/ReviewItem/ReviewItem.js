@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './ReviewItem.module.css';
 
 const ReviewItem = (props) => {
-  const clickBtnHandler = () => {
+  const [nightTheme, setNightTheme] = useState(false);
+  const classNightTheme = nightTheme ? classes.night : '';
+
+  const clickBtnDeleteItemHandler = () => {
     props.saveId(props.id);
-  }
+  };
+
+  const clickBtnChangeThemeHandler = () => {
+    setNightTheme(!nightTheme);
+  };
 
   return (
-    <div className={classes.item}>
-      <button onClick={clickBtnHandler} className={classes.btn}>Закрыть</button>
+    <div className={`${classes.item} ${classNightTheme}`}>
+      <button onClick={clickBtnDeleteItemHandler} className={classes.btn}>Удалить</button>
+      <button onClick={clickBtnChangeThemeHandler} className={classes.btnTheme}>Поменять тему</button>
       <div className={classes.left}>
         <p>Имя: {props.name}</p>
         <p>Почта: {props.mail}</p>

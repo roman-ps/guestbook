@@ -8,7 +8,7 @@ const ReviewsList = (props) => {
 
   const onSaveId = (id) => {
     props.passIdInReviews(id);
-  }
+  };
 
   if (dataItems.length > 0) {
     elements = dataItems.map((elem) => (
