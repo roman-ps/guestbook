@@ -3,6 +3,7 @@
   border: 1px solid #000000;
   margin: 20px 0;
   position: relative;
+  font-size: 14px;
 }
 
 .left {
@@ -15,6 +16,8 @@
 
 .right {
   padding: 0 20px;
+  font-style: italic;
+
 }
 
 .btn {
@@ -49,25 +52,29 @@
   transform: rotate(45deg);
 }
 
-.btnTheme {
+.btnLike {
   position: absolute;
   font-size: 0;
   width: 24px;
   height: 24px;
-  background: url('./icon-theme.png');
+  background: url('./icon-notlike.png');
   border: none;
   right: 10px;
   bottom: 15px;
   cursor: pointer;
 }
 
-.item.night {
-  background-color: #000000;
-  color: #ffffff;
-  border-color:#c5c5c5;
+.item.liked,
+.item.liked .left {
+  border-color:#dc143c;
+  box-shadow: 0px 0px 4px 1px #dc143c;
 }
 
-.item.night .left {
-  border-color:#c5c5c5;
+.item.liked .btnLike {
+  background: url('./icon-liked.png');
 }
 
+.name {
+  font-weight: 500;
+  font-size: 16px;
+}
