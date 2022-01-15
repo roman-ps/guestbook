@@ -10,7 +10,7 @@ const reviewsAll = [
     "mail": "Sincere@april.biz",
     "city": "Gwenborough",
     "text": "Leanne Graham from Gwenborough",
-    "sex": "Мужской",
+    "gender": "Мужской",
     "id": 1
   },
   {
@@ -18,7 +18,7 @@ const reviewsAll = [
     "mail": "Shanna@melissa.tv",
     "city": "Wisokyburgh",
     "text": "Ervin Howell from Wisokyburgh",
-    "sex": "Женский",
+    "gender": "Женский",
     "id": 2
   },
   {
@@ -26,7 +26,7 @@ const reviewsAll = [
     "mail": "Nathan@yesenia.net",
     "city": "McKenziehaven",
     "text": "Clementine Bauch from McKenziehaven",
-    "sex": "Женский",
+    "gender": "Женский",
     "id": 3
   },
   {
@@ -34,7 +34,7 @@ const reviewsAll = [
     "mail": "Julianne.OConner@kory.org",
     "city": "South Elvis",
     "text": "Patricia Lebsack from South Elvis",
-    "sex": "Женский",
+    "gender": "Женский",
     "id": 4
   },
   {
@@ -42,7 +42,7 @@ const reviewsAll = [
     "mail": "Karl_Dach@jasper.info",
     "city": "South Christy",
     "text": "Mrs. Dennis Schulist from South Christy",
-    "sex": "Мужской",
+    "gender": "Мужской",
     "id": 5
   },
   {
@@ -50,7 +50,7 @@ const reviewsAll = [
     "mail": "Telly.Hoeger@billy.biz",
     "city": "Howemouth",
     "text": "Kurtis Weissnat from Howemouth",
-    "sex": "Мужской",
+    "gender": "Мужской",
     "id": 6
   }
 ];

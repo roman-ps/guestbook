@@ -6,14 +6,14 @@ const Form = (props) => {
   const [enterMail, setEnterMail] = useState('');
   const [enterCity, setEnterCity] = useState('');
   const [enterText, setEnterText] = useState('');
-  const [enterSex, setEnterSex] = useState('');
+  const [enterGender, setEnterGender] = useState('');
 
   const formReset = () => {
     setEnterName('');
     setEnterMail('');
     setEnterCity('');
     setEnterText('');
-    setEnterSex('');
+    setEnterGender('');
     props.state(false);
   };
 
@@ -25,7 +25,7 @@ const Form = (props) => {
       mail: enterMail,
       city: enterCity,
       text: enterText,
-      sex: enterSex,
+      gender: enterGender,
     };
 
     props.saveData(newReview);
@@ -41,8 +41,8 @@ const Form = (props) => {
     setEnterMail(evt.target.value);
   };
 
-  const sexInputHandler = (evt) => {
-    setEnterSex(evt.target.value);
+  const genderInputHandler = (evt) => {
+    setEnterGender(evt.target.value);
   };
 
   const cityInputHandler = (evt) => {
@@ -66,7 +66,7 @@ const Form = (props) => {
         </div>
         <div className={classes.item}>
           <label htmlFor='select'>Пол: </label>
-          <select name='select' onChange={sexInputHandler}>Пол:
+          <select name='select' onChange={genderInputHandler}>Пол:
             <option value=''></option>
             <option value='Мужской'>Мужской</option>
             <option value='Женский'>Женский</option>

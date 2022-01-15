@@ -11,7 +11,7 @@ const Reviews = (props) => {
   };
 
   const filteredReviews = props.items.filter((elem) => {
-    return (elem.sex === filteredSex || filteredSex === '');
+    return (elem.gender === filteredSex || filteredSex === '');
   });
 
   const saveIdInReviews = (id) => {
