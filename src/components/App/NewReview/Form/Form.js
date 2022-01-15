@@ -68,8 +68,8 @@ const Form = (props) => {
           <label htmlFor='select'>Пол: </label>
           <select name='select' onChange={genderInputHandler}>Пол:
             <option value=''></option>
-            <option value='Мужской'>Мужской</option>
-            <option value='Женский'>Женский</option>
+            <option value='male'>Мужской</option>
+            <option value='female'>Женский</option>
           </select>
         </div>
         <div className={classes.item}>

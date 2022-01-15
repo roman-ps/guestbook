@@ -11,8 +11,8 @@ const Filter = (props) => {
       <p className={classes.title}>Фильтр</p>
       <select name='select' onChange={selectFilterHandler}>
         <option value=''></option>
-        <option value='Мужской'>Мужской</option>
-        <option value='Женский'>Женский</option>
+        <option value='male'>Мужской</option>
+        <option value='female'>Женский</option>
       </select>
     </div>
   )
