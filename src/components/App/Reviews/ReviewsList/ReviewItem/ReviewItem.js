@@ -24,6 +24,7 @@ const ReviewItem = (props) => {
       <div className={classes.left}>
         <p className={classes.name}>{props.name}</p>
         <p>Пол: {GENDER[props.gender] || 'Нипонятна'}</p>
+        <p>Возраст: {props.age}</p>
         <p>Город: {props.city}</p>
       </div>
       <div className={classes.right}>

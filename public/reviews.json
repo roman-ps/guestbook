@@ -4,7 +4,7 @@
     "mail": "sed.nulla.ante@aol.ca",
     "city": "Zwolle",
     "age": 76,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque",
     "id": 1
@@ -14,7 +14,7 @@
     "mail": "posuere.at@icloud.org",
     "city": "Opole",
     "age": 79,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor.",
     "id": 2
@@ -24,7 +24,7 @@
     "mail": "orci.ut@icloud.com",
     "city": "Märsta",
     "age": 30,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "at fringilla purus mauris a nunc.",
     "id": 3
@@ -34,7 +34,7 @@
     "mail": "felis.eget@outlook.edu",
     "city": "Okene",
     "age": 50,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "nibh enim, gravida sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis dis parturient",
     "id": 4
@@ -44,7 +44,7 @@
     "mail": "felis@protonmail.ca",
     "city": "San Andrés",
     "age": 72,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare,",
     "id": 5
@@ -54,7 +54,7 @@
     "mail": "amet@hotmail.org",
     "city": "Guangxi",
     "age": 73,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius",
     "id": 6
@@ -64,7 +64,7 @@
     "mail": "ac@icloud.net",
     "city": "Hulst",
     "age": 60,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis elementum, dui quis accumsan convallis,",
     "id": 7
@@ -74,7 +74,7 @@
     "mail": "leo@google.couk",
     "city": "Champorcher",
     "age": 20,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "sit amet, faucibus ut, nulla. Cras eu",
     "id": 8
@@ -84,7 +84,7 @@
     "mail": "pede.praesent@google.net",
     "city": "Elverum",
     "age": 36,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae,",
     "id": 9
@@ -94,7 +94,7 @@
     "mail": "id@hotmail.couk",
     "city": "Chungju",
     "age": 70,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "egestas lacinia. Sed congue, elit sed consequat auctor, nunc nulla vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae diam.",
     "id": 10
@@ -104,7 +104,7 @@
     "mail": "euismod.urna@outlook.couk",
     "city": "Cereté",
     "age": 21,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in",
     "id": 11
@@ -114,7 +114,7 @@
     "mail": "vulputate.lacus@outlook.org",
     "city": "Melilla",
     "age": 88,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "et malesuada fames ac turpis egestas. Fusce aliquet magna a neque. Nullam ut nisi a odio semper",
     "id": 12
@@ -124,7 +124,7 @@
     "mail": "arcu.vel.quam@aol.edu",
     "city": "Amiens",
     "age": 78,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "nec ante. Maecenas mi felis, adipiscing fringilla, porttitor",
     "id": 13
@@ -134,7 +134,7 @@
     "mail": "egestas@icloud.com",
     "city": "Hallein",
     "age": 61,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "semper pretium neque. Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam",
     "id": 14
@@ -144,7 +144,7 @@
     "mail": "nulla.in@aol.ca",
     "city": "Vetlanda",
     "age": 22,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "euismod ac, fermentum vel, mauris. Integer sem elit, pharetra ut, pharetra sed, hendrerit a, arcu. Sed et libero. Proin mi. Aliquam gravida mauris ut mi. Duis risus odio, auctor vitae, aliquet nec, imperdiet",
     "id": 15
@@ -154,7 +154,7 @@
     "mail": "magna.malesuada.vel@google.org",
     "city": "Dublin",
     "age": 51,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec",
     "id": 16
@@ -164,7 +164,7 @@
     "mail": "dolor.quam@aol.couk",
     "city": "Macau",
     "age": 19,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "lectus convallis est, vitae sodales nisi magna sed dui. Fusce aliquam,",
     "id": 17
@@ -174,7 +174,7 @@
     "mail": "at.nisi@outlook.net",
     "city": "Fort Smith",
     "age": 35,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "ut, nulla. Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae",
     "id": 18
@@ -184,7 +184,7 @@
     "mail": "ipsum.suspendisse.sagittis@yahoo.net",
     "city": "Cartagena",
     "age": 52,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus",
     "id": 19
@@ -194,7 +194,7 @@
     "mail": "sit@google.net",
     "city": "Northallerton",
     "age": 81,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem fringilla",
     "id": 20
@@ -204,7 +204,7 @@
     "mail": "in.consectetuer.ipsum@yahoo.couk",
     "city": "Zielona Góra",
     "age": 54,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit",
     "id": 21
@@ -214,7 +214,7 @@
     "mail": "lorem.ipsum@aol.net",
     "city": "Drammen",
     "age": 51,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis",
     "id": 22
@@ -224,7 +224,7 @@
     "mail": "tristique.aliquet.phasellus@yahoo.ca",
     "city": "Guangdong",
     "age": 38,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "Phasellus elit pede, malesuada vel, venenatis vel, faucibus id, libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus non,",
     "id": 23
@@ -234,7 +234,7 @@
     "mail": "lorem.vehicula.et@outlook.couk",
     "city": "Quesada",
     "age": 88,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "vitae sodales nisi magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean",
     "id": 24
@@ -244,7 +244,7 @@
     "mail": "libero.proin.sed@protonmail.edu",
     "city": "General Lagos",
     "age": 34,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus. Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis, pede.",
     "id": 25
@@ -254,7 +254,7 @@
     "mail": "duis.ac@yahoo.edu",
     "city": "Creil",
     "age": 71,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam",
     "id": 26
@@ -264,7 +264,7 @@
     "mail": "nam.tempor.diam@outlook.edu",
     "city": "Lago Ranco",
     "age": 83,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare,",
     "id": 27
@@ -274,7 +274,7 @@
     "mail": "in@yahoo.net",
     "city": "Uruapan",
     "age": 49,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis",
     "id": 28
@@ -284,7 +284,7 @@
     "mail": "per.inceptos.hymenaeos@google.com",
     "city": "Bogotá",
     "age": 83,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec",
     "id": 29
@@ -294,7 +294,7 @@
     "mail": "lectus.justo.eu@google.net",
     "city": "Hualaihué",
     "age": 81,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "ac mattis semper, dui lectus rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu,",
     "id": 30
@@ -304,7 +304,7 @@
     "mail": "velit.in@hotmail.com",
     "city": "Rocca di Cambio",
     "age": 74,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "ultrices posuere cubilia Curae Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia. Sed congue, elit",
     "id": 31
@@ -314,7 +314,7 @@
     "mail": "arcu.eu@aol.edu",
     "city": "Kotli",
     "age": 58,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "dis parturient montes, nascetur ridiculus mus. Proin vel",
     "id": 32
@@ -324,7 +324,7 @@
     "mail": "facilisis.facilisis.magna@hotmail.ca",
     "city": "Heusden",
     "age": 50,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "cubilia Curae Phasellus ornare. Fusce mollis. Duis sit amet diam eu dolor egestas rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere at, velit. Cras",
     "id": 33
@@ -334,7 +334,7 @@
     "mail": "orci@icloud.com",
     "city": "Alanya",
     "age": 79,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "ultricies adipiscing, enim mi tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus, varius et, euismod et, commodo at, libero. Morbi accumsan laoreet ipsum.",
     "id": 34
@@ -344,7 +344,7 @@
     "mail": "sed.diam.lorem@google.com",
     "city": "Bollnäs",
     "age": 65,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "vitae semper egestas, urna justo faucibus lectus, a sollicitudin orci sem eget massa. Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet libero. Integer in magna. Phasellus dolor elit,",
     "id": 35
@@ -354,7 +354,7 @@
     "mail": "ut@yahoo.couk",
     "city": "Galway",
     "age": 52,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "vulputate mauris sagittis placerat. Cras dictum ultricies",
     "id": 36
@@ -364,7 +364,7 @@
     "mail": "arcu.vestibulum@outlook.com",
     "city": "Piotrków Trybunalski",
     "age": 58,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non,",
     "id": 37
@@ -374,7 +374,7 @@
     "mail": "vulputate.posuere@outlook.org",
     "city": "Neunkirchen",
     "age": 80,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "lectus justo eu arcu. Morbi sit amet massa. Quisque",
     "id": 38
@@ -384,7 +384,7 @@
     "mail": "augue.scelerisque@protonmail.org",
     "city": "Oklahoma City",
     "age": 69,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "non, dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero. Proin sed turpis nec mauris",
     "id": 39
@@ -394,7 +394,7 @@
     "mail": "dui@protonmail.ca",
     "city": "Knittelfeld",
     "age": 84,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum",
     "id": 40
@@ -404,7 +404,7 @@
     "mail": "vehicula.pellentesque.tincidunt@outlook.couk",
     "city": "Châteauroux",
     "age": 35,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est ac",
     "id": 41
@@ -414,7 +414,7 @@
     "mail": "velit.dui.semper@hotmail.edu",
     "city": "Bhakkar",
     "age": 69,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum",
     "id": 42
@@ -424,7 +424,7 @@
     "mail": "ante.dictum@protonmail.couk",
     "city": "Oamaru",
     "age": 40,
-    "gender": 1,
+    "gender": "male",
     "liked": false,
     "text": "mi. Aliquam gravida mauris ut mi. Duis risus odio, auctor vitae,",
     "id": 43
@@ -434,7 +434,7 @@
     "mail": "nisl.arcu@outlook.ca",
     "city": "Medio Atrato",
     "age": 60,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "elit. Curabitur sed tortor. Integer aliquam adipiscing lacus. Ut nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien,",
     "id": 44
@@ -444,7 +444,7 @@
     "mail": "imperdiet.ornare.in@google.couk",
     "city": "Hattian Bala",
     "age": 79,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper,",
     "id": 45
@@ -454,7 +454,7 @@
     "mail": "dolor.dapibus@aol.ca",
     "city": "San Marcos",
     "age": 85,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "nonummy ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit nonummy. Fusce fermentum fermentum arcu.",
     "id": 46
@@ -464,7 +464,7 @@
     "mail": "nulla.semper@protonmail.edu",
     "city": "Mokpo",
     "age": 21,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "auctor vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer",
     "id": 47
@@ -474,7 +474,7 @@
     "mail": "massa@google.couk",
     "city": "Samsun",
     "age": 82,
-    "gender": 0,
+    "gender": "female",
     "liked": false,
     "text": "parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc",
     "id": 48
@@ -484,7 +484,7 @@
     "mail": "amet.ante@icloud.org",
     "city": "Jaén",
     "age": 55,
-    "gender": 1,
+    "gender": "male",
     "liked": true,
     "text": "libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu",
     "id": 49
@@ -494,7 +494,7 @@
     "mail": "amet@outlook.edu",
     "city": "Granada",
     "age": 32,
-    "gender": 0,
+    "gender": "female",
     "liked": true,
     "text": "taciti sociosqu ad litora torquent per conubia",
     "id": 50

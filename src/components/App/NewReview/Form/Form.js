@@ -7,6 +7,7 @@ const Form = (props) => {
   const [enterCity, setEnterCity] = useState('');
   const [enterText, setEnterText] = useState('');
   const [enterGender, setEnterGender] = useState('');
+  const [enterAge, setEnterAge] = useState('');
 
   const formReset = () => {
     setEnterName('');
@@ -14,6 +15,7 @@ const Form = (props) => {
     setEnterCity('');
     setEnterText('');
     setEnterGender('');
+    setEnterAge('');
     props.state(false);
   };
 
@@ -26,6 +28,7 @@ const Form = (props) => {
       city: enterCity,
       text: enterText,
       gender: enterGender,
+      age: enterAge,
     };
 
     props.saveData(newReview);
@@ -41,10 +44,6 @@ const Form = (props) => {
     setEnterMail(evt.target.value);
   };
 
-  const genderInputHandler = (evt) => {
-    setEnterGender(evt.target.value);
-  };
-
   const cityInputHandler = (evt) => {
     setEnterCity(evt.target.value);
   };
@@ -52,6 +51,14 @@ const Form = (props) => {
   const textInputHandler = (evt) => {
     setEnterText(evt.target.value);
   };
+
+  const genderInputHandler = (evt) => {
+    setEnterGender(evt.target.value);
+  };
+
+  const ageInputHandler = (evt) => {
+    setEnterAge(evt.target.value);
+  }
 
   return (
     <form className={classes.form} action='' method='POST' onSubmit={formSubmitHandler}>
@@ -75,6 +82,10 @@ const Form = (props) => {
         <div className={classes.item}>
           <label htmlFor='city'>Город: </label>
           <input value={enterCity} onChange={cityInputHandler} placeholder='Откуда вы' type='text' id='city' required />
+        </div>
+        <div className={classes.item}>
+          <label htmlFor='age'>Возраст: </label>
+          <input value={enterAge} onChange={ageInputHandler} placeholder='Сколько вам лет' type='number' id='age' min='1' max='150' required />
         </div>
         <div className={classes.item}>
           <label htmlFor='text'>Текст: </label>
