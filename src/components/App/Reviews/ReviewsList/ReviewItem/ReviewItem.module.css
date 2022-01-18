@@ -81,3 +81,32 @@
   font-weight: 500;
   font-size: 16px;
 }
+
+.gender-male,
+.gender-female {
+  position: relative;
+}
+
+.gender-male::after,
+.gender-female::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gender-male::after {
+  background: url('./icon-male-min.png');
+}
+
+.gender-female::after {
+  background: url('./icon-female-min.png');
+}
+
+.gender-unknown {
+  color: red;
+}

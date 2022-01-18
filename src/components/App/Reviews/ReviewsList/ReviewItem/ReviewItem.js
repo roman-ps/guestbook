@@ -4,9 +4,16 @@ import classes from './ReviewItem.module.css';
 const ReviewItem = (props) => {
   const [isLiked, setIsLiked] = useState(false);
   const classIsLiked = isLiked ? classes.liked : '';
-  const GENDER = {
+
+  const GenderType = {
     male: 'Мужской',
     female: 'Женский',
+  };
+
+  const GenderClasses = {
+    male: classes['gender-male'],
+    female : classes['gender-female'],
+    unknown: classes['gender-unknown'],
   };
 
   const clickBtnDeleteItemHandler = () => {
@@ -23,7 +30,7 @@ const ReviewItem = (props) => {
       <button onClick={clickBtnChangeLikeHandler} className={classes.btnLike}>Лайкнуть</button>
       <div className={classes.left}>
         <p className={classes.name}>{props.name}</p>
-        <p>Пол: {GENDER[props.gender] || 'Нипонятна'}</p>
+        <p className={GenderClasses[props.gender] || GenderClasses.unknown}>Пол: {GenderType[props.gender] || 'Неизвестный'}</p>
         <p>Возраст: {props.age}</p>
         <p>Город: {props.city}</p>
       </div>
