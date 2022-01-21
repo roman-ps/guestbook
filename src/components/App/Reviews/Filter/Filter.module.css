@@ -4,6 +4,12 @@
   font-size: 18px;
 }
 
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
 .title {
   margin: 0;
 }
