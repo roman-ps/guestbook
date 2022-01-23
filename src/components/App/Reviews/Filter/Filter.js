@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Filter.module.css';
+import {AgeTypes} from '../../../../const';
 
 const Filter = (props) => {
   const toggleGenderFilterHandler = (evt) => {
@@ -23,14 +24,13 @@ const Filter = (props) => {
       <div className={classes['filter-container']}>
         <p className={classes.title}>Возраст</p>
         <select name='select' onChange={toggleAgeFilterHandler}>
-          <option value=''></option>
-          <option value='young'>до 20</option>
-          <option value='adult'>21-50</option>
-          <option value='old'>51-65</option>
-          <option value='superstar'>от 66</option>
+          <option value={AgeTypes.ALL}></option>
+          <option value={AgeTypes.YOUNG}>до 20</option>
+          <option value={AgeTypes.ADULT}>21-50</option>
+          <option value={AgeTypes.OLD}>51-65</option>
+          <option value={AgeTypes.SUPERSTAR}>от 66</option>
         </select>
       </div>
-
     </div>
   )
 };

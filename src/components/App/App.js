@@ -39,7 +39,7 @@ const App = () => {
       <NewReview finalSaveData={onFinalSaveData} />
       <Reviews items={reviews} passIdInApp={deleteItemById}/>
     </div>
-  );
+  )
 };
 
 export default App;
