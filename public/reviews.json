@@ -65,7 +65,7 @@
     "city": "Hulst",
     "age": 60,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis elementum, dui quis accumsan convallis,",
     "id": 7
   },
@@ -85,7 +85,7 @@
     "city": "Elverum",
     "age": 36,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae,",
     "id": 9
   },
@@ -105,7 +105,7 @@
     "city": "Cereté",
     "age": 21,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in",
     "id": 11
   },
@@ -155,7 +155,7 @@
     "city": "Dublin",
     "age": 51,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec",
     "id": 16
   },
@@ -165,7 +165,7 @@
     "city": "Macau",
     "age": 19,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "lectus convallis est, vitae sodales nisi magna sed dui. Fusce aliquam,",
     "id": 17
   },
@@ -175,7 +175,7 @@
     "city": "Fort Smith",
     "age": 35,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "ut, nulla. Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae",
     "id": 18
   },
@@ -185,7 +185,7 @@
     "city": "Cartagena",
     "age": 52,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus",
     "id": 19
   },
@@ -195,7 +195,7 @@
     "city": "Northallerton",
     "age": 81,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem fringilla",
     "id": 20
   },
@@ -265,7 +265,7 @@
     "city": "Lago Ranco",
     "age": 83,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare,",
     "id": 27
   },
@@ -275,7 +275,7 @@
     "city": "Uruapan",
     "age": 49,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis",
     "id": 28
   },
@@ -305,7 +305,7 @@
     "city": "Rocca di Cambio",
     "age": 74,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "ultrices posuere cubilia Curae Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia. Sed congue, elit",
     "id": 31
   },
@@ -355,7 +355,7 @@
     "city": "Galway",
     "age": 52,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "vulputate mauris sagittis placerat. Cras dictum ultricies",
     "id": 36
   },
@@ -375,7 +375,7 @@
     "city": "Neunkirchen",
     "age": 80,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "lectus justo eu arcu. Morbi sit amet massa. Quisque",
     "id": 38
   },
@@ -435,7 +435,7 @@
     "city": "Medio Atrato",
     "age": 60,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "elit. Curabitur sed tortor. Integer aliquam adipiscing lacus. Ut nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien,",
     "id": 44
   },
@@ -445,7 +445,7 @@
     "city": "Hattian Bala",
     "age": 79,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper,",
     "id": 45
   },
@@ -455,7 +455,7 @@
     "city": "San Marcos",
     "age": 85,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "nonummy ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit nonummy. Fusce fermentum fermentum arcu.",
     "id": 46
   },
@@ -465,7 +465,7 @@
     "city": "Mokpo",
     "age": 21,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "auctor vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer",
     "id": 47
   },
@@ -485,7 +485,7 @@
     "city": "Jaén",
     "age": 55,
     "gender": "male",
-    "liked": true,
+    "liked": false,
     "text": "libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu",
     "id": 49
   },
@@ -495,7 +495,7 @@
     "city": "Granada",
     "age": 32,
     "gender": "female",
-    "liked": true,
+    "liked": false,
     "text": "taciti sociosqu ad litora torquent per conubia",
     "id": 50
   }

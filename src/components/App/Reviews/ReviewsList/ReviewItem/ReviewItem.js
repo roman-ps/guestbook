@@ -1,12 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import classes from './ReviewItem.module.css';
 import {GenderType} from '../../../../../const';
 import {GenderClasses} from '../../../../../const';
 
 const ReviewItem = (props) => {
-  const [isLiked, setIsLiked] = useState(false);
-  const classIsLiked = isLiked ? classes.liked : '';
-  const currentClass = GenderClasses[props.gender] || classes[GenderClasses.unknown];
+  const classIsLiked = props.liked ? classes.liked : '';
+  const currentClass = GenderClasses[props.gender] || GenderClasses.unknown;
   const currentGender = GenderType[props.gender] || 'Неизвестный';
 
   const clickBtnDeleteItemHandler = () => {
@@ -14,7 +13,7 @@ const ReviewItem = (props) => {
   };
 
   const clickBtnChangeLikeHandler = () => {
-    setIsLiked(!isLiked);
+    props.getLiked(props.id)
   };
 
   return (

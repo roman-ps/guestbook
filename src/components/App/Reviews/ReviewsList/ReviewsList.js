@@ -10,9 +10,13 @@ const ReviewsList = (props) => {
     props.passIdInReviews(id);
   };
 
+  const onGetLiked = (id) => {
+    props.passLikeInReviews(id);
+  };
+
   if (dataItems.length > 0) {
     elements = dataItems.map((elem) => (
-    <ReviewItem saveId={onSaveId} name={elem.name} mail={elem.mail} city={elem.city} text={elem.text} key={elem.id} id={elem.id} gender={elem.gender} age={elem.age}/>
+    <ReviewItem saveId={onSaveId} getLiked={onGetLiked} name={elem.name} mail={elem.mail} city={elem.city} text={elem.text} key={elem.id} id={elem.id} gender={elem.gender} age={elem.age} liked={elem.liked}/>
     ))
   };
 

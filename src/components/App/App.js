@@ -33,11 +33,19 @@ const App = () => {
     setReviews(finalReviews);
   };
 
+  const likedItemById = (id) => {
+    const finalReviews = reviews.map((elem) => {
+      if (elem.id === id) {elem.liked = !elem.liked}
+      return elem;
+    })
+    setReviews(finalReviews);
+  };
+
   return (
     <div className={classes.wrapper}>
       <Title />
       <NewReview finalSaveData={onFinalSaveData} />
-      <Reviews items={reviews} passIdInApp={deleteItemById}/>
+      <Reviews items={reviews} passIdInApp={deleteItemById} passLikeInApp={likedItemById}/>
     </div>
   )
 };

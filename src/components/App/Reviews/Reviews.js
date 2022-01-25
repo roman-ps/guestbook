@@ -7,6 +7,7 @@ import {AgeTypes} from '../../../const';
 const Reviews = (props) => {
   const [filteredGender, setFilteredGender] = useState('');
   const [filteredAge, setFilteredAge] = useState(AgeTypes.ALL);
+  const [filteredLike, setFilteredLike] = useState('');
 
   const onSelectFilterHandler = (filteredGender) => {
     setFilteredGender(filteredGender);
@@ -16,22 +17,32 @@ const Reviews = (props) => {
     setFilteredAge(age.split(','));
   };
 
-  const filteredReviews = props.items.filter((elem) => {
-    const min = filteredAge[0];
-    const max = filteredAge[1];
+  const onCheckedLikeHandler = (bool) => {
+    setFilteredLike(bool);
+  }
 
-    return ((elem.gender === filteredGender || filteredGender === '') && (elem.age < max && elem.age > min));
+  const filteredReviews = props.items.filter((elem) => {
+    const MIN = filteredAge[0];
+    const MAX = filteredAge[1];
+
+    return (
+      (elem.gender === filteredGender || filteredGender === '') && (elem.age < MAX && elem.age > MIN) && (elem.liked === filteredLike || filteredLike === '')
+      );
   });
 
   const saveIdInReviews = (id) => {
     props.passIdInApp(id);
   };
 
+  const saveLikeInReviews = (id) => {
+    props.passLikeInApp(id);
+  };
+
   return (
     <main className={classes.main}>
       <h2 className={classes.title}>Reviews</h2>
-      <Filter selectGenderFilterHandler={onSelectFilterHandler} selectAgeFilterHandler={onSelectAgeHandler}/>
-      <ReviewsList passIdInReviews={saveIdInReviews} items={filteredReviews} />
+      <Filter selectGenderFilterHandler={onSelectFilterHandler} selectAgeFilterHandler={onSelectAgeHandler} checkedLikeHandler={onCheckedLikeHandler}/>
+      <ReviewsList passIdInReviews={saveIdInReviews} passLikeInReviews={saveLikeInReviews} items={filteredReviews} />
     </main>
   )
 };

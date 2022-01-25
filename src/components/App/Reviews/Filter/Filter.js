@@ -11,6 +11,10 @@ const Filter = (props) => {
     props.selectAgeFilterHandler(evt.target.value);
   };
 
+  const toggleLikeChangeHandler = (evt) => {
+    props.checkedLikeHandler(evt.target.checked)
+  }
+
   return (
     <div className={classes.filter}>
       <div className={classes['filter-container']}>
@@ -22,13 +26,18 @@ const Filter = (props) => {
         </select>
       </div>
       <div className={classes['filter-container']}>
+        <label htmlFor='liked'>
+          <input name='checked' type='checkbox' value='false' id="liked" onChange={toggleLikeChangeHandler} />Лайк
+        </label>
+      </div>
+      <div className={classes['filter-container']}>
         <p className={classes.title}>Возраст</p>
         <select name='select' onChange={toggleAgeFilterHandler}>
           <option value={AgeTypes.ALL}></option>
-          <option value={AgeTypes.YOUNG}>до 20</option>
-          <option value={AgeTypes.ADULT}>21-50</option>
-          <option value={AgeTypes.OLD}>51-65</option>
-          <option value={AgeTypes.SUPERSTAR}>от 66</option>
+          <option value={AgeTypes.YOUNG}>до 25</option>
+          <option value={AgeTypes.ADULT}>26-59</option>
+          <option value={AgeTypes.OLD}>60-79</option>
+          <option value={AgeTypes.SUPERSTAR}>от 80</option>
         </select>
       </div>
     </div>
