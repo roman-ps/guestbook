@@ -7,7 +7,7 @@ import {AgeTypes} from '../../../const';
 const Reviews = (props) => {
   const [filteredGender, setFilteredGender] = useState('');
   const [filteredAge, setFilteredAge] = useState(AgeTypes.ALL);
-  const [filteredLike, setFilteredLike] = useState('');
+  const [filteredLike, setFilteredLike] = useState(false);
 
   const onSelectFilterHandler = (filteredGender) => {
     setFilteredGender(filteredGender);
@@ -19,6 +19,7 @@ const Reviews = (props) => {
 
   const onCheckedLikeHandler = (bool) => {
     setFilteredLike(bool);
+    console.log(filteredLike);
   }
 
   const filteredReviews = props.items.filter((elem) => {
@@ -26,8 +27,8 @@ const Reviews = (props) => {
     const MAX = filteredAge[1];
 
     return (
-      (elem.gender === filteredGender || filteredGender === '') && (elem.age < MAX && elem.age > MIN) && (elem.liked === filteredLike || filteredLike === '')
-      );
+      (elem.gender === filteredGender || filteredGender === '') && (elem.age > MIN && elem.age < MAX) && (elem.liked === filteredLike || filteredLike === false)
+    )
   });
 
   const saveIdInReviews = (id) => {
