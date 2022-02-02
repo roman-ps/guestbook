@@ -6,7 +6,7 @@ import {GenderClasses} from '../../../../../const';
 const ReviewItem = (props) => {
   const classIsLiked = props.liked ? classes.liked : '';
   const currentClass = GenderClasses[props.gender] || GenderClasses.unknown;
-  const currentGender = GenderType[props.gender] || 'Неизвестный';
+  const currentGender = GenderType[props.gender] || GenderType.unknown;
 
   const clickBtnDeleteItemHandler = () => {
     props.saveId(props.id);

@@ -9,6 +9,7 @@ const AgeTypes = {
 const GenderType = {
   male: 'Мужской',
   female: 'Женский',
+  unknown: 'Неизвестный',
 };
 
 const GenderClasses = {

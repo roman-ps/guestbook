@@ -17,10 +17,9 @@ const Reviews = (props) => {
     setFilteredAge(age.split(','));
   };
 
-  const onCheckedLikeHandler = (bool) => {
-    setFilteredLike(bool);
-    console.log(filteredLike);
-  }
+  const onCheckedLikeHandler = (isLiked) => {
+    setFilteredLike(isLiked);
+  };
 
   const filteredReviews = props.items.filter((elem) => {
     const MIN = filteredAge[0];

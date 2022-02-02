@@ -33,7 +33,7 @@ const App = () => {
     setReviews(finalReviews);
   };
 
-  const likedItemById = (id) => {
+  const toggleItemLikeById = (id) => {
     const finalReviews = reviews.map((elem) => {
       if (elem.id === id) {elem.liked = !elem.liked}
       return elem;
@@ -45,7 +45,7 @@ const App = () => {
     <div className={classes.wrapper}>
       <Title />
       <NewReview finalSaveData={onFinalSaveData} />
-      <Reviews items={reviews} passIdInApp={deleteItemById} passLikeInApp={likedItemById}/>
+      <Reviews items={reviews} passIdInApp={deleteItemById} passLikeInApp={toggleItemLikeById}/>
     </div>
   )
 };
