@@ -14,11 +14,11 @@
   margin: 20px 0;
 }
 
-label {
+.item label {
   width: 80px;
 }
 
-input {
+.item input {
   width: 60%;
 }
 
