@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 import classes from './NewReview.module.css';
 import Form from './Form/Form';
 
@@ -14,11 +14,11 @@ const NewReview = (props) => {
   };
 
   return (
-    <div>
+    <Fragment>
       {formEdit
       ? <Form state={setFormEdit} saveData={onSaveData} />
       : <button className={classes.btn} onClick={enableFormEdit}>Добавить новый отзыв</button>}
-    </div>
+    </Fragment>
   )
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Filter.module.css';
-import {AgeTypes} from '../../../../const';
+import {AgeValues, GenderValues} from 'constants/const';
 
 const Filter = (props) => {
   const toggleGenderFilterHandler = (evt) => {
@@ -12,17 +12,19 @@ const Filter = (props) => {
   };
 
   const toggleLikeChangeHandler = (evt) => {
-    props.checkedLikeHandler(evt.target.checked)
-  }
+    props.checkedLikeHandler(evt.target.checked);
+  };
+
+  const ageOptions = AgeValues.map((key) => <option value={key.value}>{key.content}</option>);
+
+  const genderOptions = GenderValues.map((key) => <option value={key.value}>{key.content}</option>);
 
   return (
     <div className={classes.filter}>
       <div className={classes['filter-container']}>
         <p className={classes.title}>Пол</p>
         <select name='select' onChange={toggleGenderFilterHandler}>
-          <option value=''></option>
-          <option value='male'>Мужской</option>
-          <option value='female'>Женский</option>
+          {genderOptions}
         </select>
       </div>
       <div className={classes['filter-container']}>
@@ -33,11 +35,7 @@ const Filter = (props) => {
       <div className={classes['filter-container']}>
         <p className={classes.title}>Возраст</p>
         <select name='select' onChange={toggleAgeFilterHandler}>
-          <option value={AgeTypes.ALL}></option>
-          <option value={AgeTypes.YOUNG}>до 25</option>
-          <option value={AgeTypes.ADULT}>26-59</option>
-          <option value={AgeTypes.OLD}>60-79</option>
-          <option value={AgeTypes.SUPERSTAR}>от 80</option>
+          {ageOptions}
         </select>
       </div>
     </div>

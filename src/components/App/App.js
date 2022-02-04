@@ -10,9 +10,11 @@ const App = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch(DATA_URL)
+    // setTimeout(() => {
+      fetch(DATA_URL)
       .then(response => response.json())
       .then(result => setReviews(result))
+    // }, 2000);
   }, []);
 
   const getNextId = () => {

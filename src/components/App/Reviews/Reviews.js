@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import ReviewsList from './ReviewsList/ReviewsList';
 import Filter from './Filter/Filter';
 import classes from './Reviews.module.css';
-import {AgeTypes} from '../../../const';
+import {AgeValues} from 'constants/const';
 
 const Reviews = (props) => {
   const [filteredGender, setFilteredGender] = useState('');
-  const [filteredAge, setFilteredAge] = useState(AgeTypes.ALL);
+  const [filteredAge, setFilteredAge] = useState(AgeValues[0].value);
   const [filteredLike, setFilteredLike] = useState(false);
 
   const onSelectFilterHandler = (filteredGender) => {
@@ -14,7 +14,7 @@ const Reviews = (props) => {
   };
 
   const onSelectAgeHandler = (age) => {
-    setFilteredAge(age.split(','));
+    setFilteredAge(age.split(',').map(Number));
   };
 
   const onCheckedLikeHandler = (isLiked) => {
@@ -26,7 +26,7 @@ const Reviews = (props) => {
     const MAX = filteredAge[1];
 
     return (
-      (elem.gender === filteredGender || filteredGender === '') && (elem.age > MIN && elem.age < MAX) && (elem.liked === filteredLike || filteredLike === false)
+      (elem.gender === filteredGender || filteredGender === '') && (elem.age >= MIN && elem.age <= MAX) && (elem.liked === filteredLike || filteredLike === false)
     )
   });
 

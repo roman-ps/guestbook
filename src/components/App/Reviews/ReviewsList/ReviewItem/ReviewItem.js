@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './ReviewItem.module.css';
-import {GenderType} from '../../../../../const';
-import {GenderClasses} from '../../../../../const';
+import {GenderType, GenderClasses} from 'constants/const';
 
 const ReviewItem = (props) => {
   const classIsLiked = props.liked ? classes.liked : '';
